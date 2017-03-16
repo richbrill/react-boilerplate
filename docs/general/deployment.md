@@ -35,3 +35,21 @@
 *Step 6:* Click on your new S3 bucket on the left to open the bucket. Click `Upload` and select all the files within your `./build` folder. Click `Start Upload`. Once the files are done, select all of the files, right-click on the selected files (or click on the `Actions` button) and select `Make Public`.
 
 *Step 7:* Click on the `Properties` tab, open `Static Website Hosting`, and click on the *Endpoint* link. The app should be running on that URL.
+
+## Microsoft Azure
+
+### Easy 7-Step Deployment Process
+
+*Step 1:* Navigate to [Azure Portal](https://portal.azure.com) and login (or sign up if you don't have an account). Click on `New` on the far left-hand panel followed by `Web + Mobile` then `Web App`.
+
+*Step 2:* Enter a name for your app in the `App name` field, choose your preferred subscription from the `Subscription` drop-down and your preferred Resource Group from the `Resource Group` drop-down then click `create` and wait for your new web app to be deployed.
+
+*Step 3:* If Azure hasn't already opened your newly created web app navigate to it by searching for it by name in the search field at the top or clicking on `App Services` in the left-hand panel.
+
+*Step 4:* Open the `Permissions` accordion on the right (under the `Properties` tab) after selecting your new bucket. Click `Add more permissions`, set the `Grantee` to `Everyone` (or whoever you want to be able to access the website), and give them `View Permissions`. Click `Save`.
+
+*Step 5:* Click on the `Static Website Hosting` accordion where you should see the URL (or *endpoint*) of your website (ie. example.s3-website-us-east-1.amazonaws.com). Click `Enable website hosting` and fill in both the `Index document` and `Error document` input fields with `index.html`. Click `Save`.
+
+*Step 6:* Click on your new S3 bucket on the left to open the bucket. Click `Upload` and select all the files within your `./build` folder. Click `Start Upload`. Once the files are done, select all of the files, right-click on the selected files (or click on the `Actions` button) and select `Make Public`.
+
+*Step 7:* Click on the `Properties` tab, open `Static Website Hosting`, and click on the *Endpoint* link. The app should be running on that URL.
